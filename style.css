@@ -1,0 +1,108 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    user-select: none;
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(197, 37, 197);
+    animation: typingHeader 5s steps(40) 1s 1 normal both;
+}
+
+p {
+    position: relative;
+    top: 10%;
+    width: 16em;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(197, 37, 197);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingParagraph 2s steps(40) 1s 1 normal both;
+    animation-delay: 5s;
+    font-size: 1.2em;
+}
+
+
+@keyframes typingHeader {
+    from {
+        width: 0;
+    } to {
+        width: 31em;
+    }
+}
+
+@keyframes typingParagraph {
+    from {
+        width: 0;
+    } to {
+        width: 31em;
+    }
+}
+
+.stopwatch {
+    position: relative;
+    top: 30%;
+    width: 20em;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(197, 37, 197);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingParagraph 5s steps(40) 1s 1 normal both;
+    animation-delay: 8s;
+    font-size: 2.5em;
+}
+
+button {
+    position: relative;
+    border-radius: 64px;
+    width: 10%;
+    height: 5%;
+    top: 18%;
+    left: 50%;
+    transform: translate(-160%, 350%);
+    animation: buttonAnimation 1s steps(40) 1s 1 normal both;
+    animation-delay: 7.5s;
+    cursor: pointer;
+}
+
+@keyframes buttonAnimation {
+    from {
+        top: 100%;
+    } to {
+        top: 18%;
+        left: 50%;
+    }
+}
+
+button:hover {
+    background-color: rgb(197, 37, 197);
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+button:active {
+    filter: drop-shadow(0 0 0.85rem rgb(238, 99, 238));
+    border: none;
+}
+
