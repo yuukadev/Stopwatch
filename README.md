@@ -14,4 +14,4 @@ Note :
 [Twitter](https://twitter.com/yuukasuoh)
 
 # Preview Of The Page
-[Preview](#)
+[Preview](https://yuukadev.github.io/stopwatch/)
